@@ -1,11 +1,11 @@
-FROM ubuntu:latest
+FROM ubuntu:eoan
 
 LABEL "maintainer"="L3D <l3d@c3woc.de>"
-LABEL "repository"="https://github.com/roles-ansible/check-ansible-ubuntu-latest-action.git"
-LABEL "homepage"="https://github.com/roles-ansible/check-ansible-ubuntu-latest-action"
+LABEL "repository"="https://github.com/roles-ansible/check-ansible-ubuntu-eoan-action.git"
+LABEL "homepage"="https://github.com/roles-ansible/check-ansible-ubuntu-eoan-action"
 
-LABEL "com.github.actions.name"="check-ansible-ubuntu-latest"
-LABEL "com.github.actions.description"="Check ansible role or playbook with Ubuntu latest"
+LABEL "com.github.actions.name"="check-ansible-ubuntu-eoan"
+LABEL "com.github.actions.description"="Check ansible role or playbook with Ubuntu eoan"
 LABEL "com.github.actions.icon"="aperture"
 LABEL "com.github.actions.color"="green"
 

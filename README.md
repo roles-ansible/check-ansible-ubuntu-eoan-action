@@ -1,32 +1,32 @@
-[![Github Marketplace](https://raw.githubusercontent.com/roles-ansible/check-ansible-ubuntu-latest-action/master/.github/marketplace.svg?sanitize=true)](https://github.com/marketplace/actions/check-ansible-ubuntu-latest)
-[![MIT License](https://raw.githubusercontent.com/roles-ansible/check-ansible-ubuntu-latest-action/master/.github/license.svg?sanitize=true)](https://github.com/roles-ansible/check-ansible-ubuntu-latest-action/blob/master/LICENSE)
+[![Github Marketplace](https://raw.githubusercontent.com/roles-ansible/check-ansible-ubuntu-eoan-action/master/.github/marketplace.svg?sanitize=true)](https://github.com/marketplace/actions/check-ansible-ubuntu-eoan)
+[![MIT License](https://raw.githubusercontent.com/roles-ansible/check-ansible-ubuntu-eoan-action/master/.github/license.svg?sanitize=true)](https://github.com/roles-ansible/check-ansible-ubuntu-eoan-action/blob/master/LICENSE)
 
- Check Ansible Ubuntu latest
+ Check Ansible Ubuntu eoan
 =======================
-This action allows you to test your ansible role or your playbook in a Docker Container with ``ubuntu:latest``.
+This action allows you to test your ansible role or your playbook in a Docker Container with ``ubuntu:eoan``.
 
 ## Usage
-To use the action simply create an ``ansible-ubuntu-latest.yml`` *(or choose custom ``*.yml`` name)* in the ``.github/workflows/`` directory.
+To use the action simply create an ``ansible-ubuntu-eoan.yml`` *(or choose custom ``*.yml`` name)* in the ``.github/workflows/`` directory.
 
 For example:
 
 ```yaml
-name: Ansible check ubuntu:latest  # feel free to pick your own name
+name: Ansible check ubuntu:eoan  # feel free to pick your own name
 
 on: [push, pull_request]
 
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-eoan
 
     steps:
     # Important: This sets up your GITHUB_WORKSPACE environment variable
     - uses: actions/checkout@v2
 
-    - name: ansible check with ubuntu:latest
+    - name: ansible check with ubuntu:eoan
       # replace "master" with any valid ref
-      uses: roles-ansible/check-ansible-ubuntu-latest-action@master
+      uses: roles-ansible/check-ansible-ubuntu-eoan-action@master
       with:
         targets: "./"
         #  [required]
