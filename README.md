@@ -5,6 +5,16 @@
 =======================
 This action allows you to test your ansible role or your playbook in a Docker Container with ``ubuntu:eoan``.
 
+:::warning
+Ubuntu Eoan reached it [END OF SUPPORT](https://fridge.ubuntu.com/2020/07/17/ubuntu-19-10-eoan-ermine-end-of-life-reached-on-july-17-2020/).
+
+
+Since the Ubunbtu version used here is now end of life, this github action will also no longer be actively maintained.
+
+Of course we will continue to review your pull requests here. But we are currently not trying to fix known issues like the docker image used here not being fully available anymore.
+:::
+
+
 ## Usage
 To use the action simply create an ``ansible-ubuntu-eoan.yml`` *(or choose custom ``*.yml`` name)* in the ``.github/workflows/`` directory.
 
